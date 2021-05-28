@@ -1,0 +1,7 @@
+th, td {
+    border: solid 1px;
+}
+
+thead th+th img {
+    border-radius: 50%;
+}

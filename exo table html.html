@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau html</title>
+    <style>
+        html, body {
+            min-height: 100%;
+            font-size: 12pt;
+            font-family: 'Arial','Helvetica Neue', sans-serif;
+        }
+        ul {
+            list-style: none;
+        }
+        tbody {
+            border-spacing: 25px;
+        }
+        tbody ul{
+        font-size: 0.7rem;
+        padding: 0;
+        }
+        a {
+         text-decoration: none;
+         color: inherit;
+        }
+        /*th, td {
+            border: solid 1px;
+        }*/
+        thead {
+            white-space: nowrap;
+        }
+        table thead>tr>th>a>img {
+            width: 35px;
+            margin-left: 35px;
+        }
+        thead th+th img {
+            border-radius: 50%;
+            margin: 30px;
+        }
+        thead th+th {
+            text-align: right;
+        }
+        h1 {
+            font-size: 1.7rem;
+            font-weight: 200;
+            margin: 25px;
+        }
+        h2 {
+            font-size: 1rem;
+            margin: 0;
+            padding-right: 200px;
+            color: hsl(212, 100%, 38%);
+        }
+        h3 {
+            font-size: 0.9rem;
+            font-weight: 200;
+        }
+        body {
+            background-color: hsl(25, 10%, 95%);
+        }
+        body thead, tbody {
+            background-color: white;
+        }
+        tr {
+            display: table;
+            width: 100%;
+        }
+        tbody ul li {
+            display: flex;
+            align-items: center;
+            color: gray;
+        }
+        tbody ul li img {
+            width: 25px;
+        }
+        .pn {
+            text-align: center;
+        }
+        .Pascal {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+        table {
+            width: 45%;
+            margin: auto; /*margin-left: 250px;*/
+            text-align: left;
+            border-spacing: 0;
+        }
+        tfoot{
+            display: inline-block;
+            margin-left: 20px;
+            background:  hsl(25, 10%, 95%);
+            font-size: 0.8rem;
+        }
+        tfoot img {
+            width: 60px;
+            height: 15px;
+        }
+        tfoot p {
+            color: hsl(212, 100%, 38%);
+            text-decoration: underline hsl(212, 100%, 38%);
+            display: inherit;
+            line-height: 0;
+        }
+        .list {
+            display: inline-block;
+            white-space: nowrap;
+            margin-right: 10px;
+            color: hsl(212, 100%, 38%);
+            text-decoration: underline hsl(212, 100%, 38%);
+        }
+        .urban, .java, .front, .lab5com, .vuejs, .stack {
+            width: 55px;
+            height: 55px;
+        }
+        .logo {
+            display: block;
+        }
+        .text {
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        .bordure {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .listalign {
+            display: flex;
+            align-items: center;
+        }
+        .ulimage {
+            margin-right: 10px;
+        }
+        .footstyle {
+            padding-top: 30px;
+        }
+        .list2 {
+            display: inline-block;
+            margin-left: -40px;
+        }
+        .footstyle2 {
+            display: inherit;
+            margin-top: 12px;
+        }
+        .footstyle3 {
+            display: inherit;
+            margin-bottom: 12px;
+        }
+        .margin {
+            margin-top: -40px
+        }
+        .margin2 {
+            margin-top: -40px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <a href="https://www.linkedin.com/comm/feed/?midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-header-55-home&trkEmail=eml-jobs_jymbii_digest-header-55-home-null-3te20m%7Ekolu4ot9%7Eo9-null-neptune%2Ffeed&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/logo%20linkedin.png" alt="logo linkedin">
+                </a>
+            </th>
+            <th></th>
+            <th>
+                <a href="https://www.linkedin.com/comm/feed/?midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-header-55-home&trkEmail=eml-jobs_jymbii_digest-header-55-home-null-3te20m%7Ekolu4ot9%7Eo9-null-neptune%2Ffeed&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/photo.jpg" alt="photo Pascal Navière">
+                </a>
+            </th>
+        <tr>
+            <th colspan="3">
+                <h1>Sélection d'offres d'emploi pour vous</h1>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="logo">
+                <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/urban%20linker.gif" alt="logo urban linker" class="urban">
+                </a>
+            </td>
+            <td>
+                <h2>Développeur Node.js | Food Tech</h2>
+                <h3>Urban Linker Paris et périphérie</h3>
+                <ul>
+                    <li><img src="./images/image%20développeur.jpg" alt="image développeur" class="bordure">
+                        <span>4 relations</span>
+                    </li>
+                    <li class="listalign"><img src="./images/logo%20linkedin.png" alt="logo linkedin" class="ulimage">
+                        <span>Candidature simplifiée</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="logo">
+                <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/ds%20logo.png" alt="logo développeur javascript" class="java">
+                </a>
+            </td>
+            <td>
+                <h2>Développeur web - Javascript H/F</h2>
+                <h3>Dassault Systèmes Paris, Ile-de-France, France</h3>
+                <ul>
+                    <li><img src="./images/horloge.png" alt="logo horloge" class="bordure"> Soyez parmi les 15 premiers candidats</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="logo">
+                <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/logo%20e.jpg" alt="logo développeur front end angular" class="front">
+                </a>
+            </td>
+            <td>
+                <h2>Développeur front-end Angular</h2>
+                <h3>Expertime Viroflay, Ile de France, France</h3>
+                <ul>
+                    <li><img src="./images/image%20développeur%202.jpg" alt="image développeur" class="bordure">1 relation</li>
+                    <li class="listalign"><img src="./images/logo%20linkedin.png" alt="logo linkedin" class="ulimage">
+                        <span>Candidature simplifiée</span>
+                    </li>
+                </ul>
+            </td>
+        <tr>
+            <td class="logo">
+                <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/logo%20front%20end%20vue%20js.jpg" alt="logo développeur front end vue js" class="vuejs">
+                </a>
+            </td>
+            <td>
+                <h2>Développeur Front-End - Vue.js</h2>
+                <h3>Twyce · Paris, Île-de-France, France</h3>
+                <ul>
+                    <li><img src="./images/horloge.png" alt="logo horloge" class="bordure">Soyez parmi les 7 candidats</li>
+                    <li class="listalign"><img src="./images/logo%20linkedin.png" alt="logo linkedin" class="ulimage">
+                        <span>Candidature simplifiée</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="logo">
+                <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/logo%20lab5com.jpg" alt="logo lab5com" class="lab5com">
+                </a>
+            </td>
+            <td>
+                <h2>Développeur JavaScript</h2>
+                <h3>LAB5COM · Ville de Paris, Île-de-France, France</h3>
+                <ul>
+                    <li><img src="./images/logo%20recrutement%20actif.png" alt="logo recrutement" class="bordure">Recrutement actif</li>
+                    <li class="listalign"><img src="./images/logo%20linkedin.png" alt="logo linkedin" class="ulimage">
+                        <span>Candidature simplifiée</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="logo">
+                <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/logo%20développeur%20full%20stack.png" alt="logo développeur full stack" class="stack">
+                </a>
+            </td>
+            <td>
+                <h2>Dévellopeur Full Stack-Nouveau</h2>
+                <h3>ALYCE Sceaux, Ile-de-France</h3>
+                <ul>
+                    <li><img src="./images/horloge.png" alt="logo horloge" class="bordure">Soyez parmi les 5 premiers candidats</li>
+                    <li class="listalign"><img src="./images/logo%20linkedin.png" alt="logo linkedin" class="ulimage">
+                        <span>Candidature simplifiée</span>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr class="margin">
+            <td colspan="3">
+                <button>
+                    <a href="https://www.linkedin.com/comm/jobs/view/2543738145?lgTemp=jobs_jymbii_digest&eBP=NotAvailableFromMidTier&lgCta=eml-jymbii-organic-job-card&recommendedFlavor=IN_NETWORK&refId=%C2%B2j%5C%17%C3%B4%C3%94%1D%C3%BF*%C2%9D%C3%85K%C2%89%C2%9E%1B%28&trackingId=Ob8Zp2cmVSsLb9Nvx%2F8Ixw%3D%3D&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado&trkEmail=eml-jobs_jymbii_digest-jymbii-19-job_card_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-jobs%7Eview&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">Voir toutes les offres d'emplois</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td>PREMIUM</td>
+        </tr>
+        <tr class="margin2">
+            <td colspan="3" class="pn"><img src="./images/photo.jpg" alt="photo Pascal Navière" class="Pascal"></td>
+        </tr>
+        <tr class="margin">
+            <td colspan="3" class="text">
+                Découvrez les emplois pour lesquels vous êtes l'un des meilleurs candidats
+            </td>
+        <tr class="margin">
+            <td colspan="3" class="pn">
+                <button>Essayez Premium gratuitement</button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3" class="footstyle">Cet e-mail est destiné à Pascal Navière (Développeur chez leboncoin).</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <a href="https://www.linkedin.com/e/v2?e=3te20m-kolu4ot9-o9&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D&a=customerServiceUrl&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&ek=jobs_jymbii_digest&articleId=4788"><p>Découvrez pourquoi nous précisons ceci</p></a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="footstyle2">Vous recevez des e-mails de Des offres d’emploi qui pourraient vous intéresser.</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="list2">
+                <ul>
+                    <li class="list"><a href="https://www.linkedin.com/comm/jobs/alerts?midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-footer-29-manage_alert_mercado&trkEmail=eml-jobs_jymbii_digest-footer-29-manage_alert_mercado-null-3te20m%7Ekolu4ot9%7Eo9-null-job%7Ealert%7Emanager&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">Gérer les recommandations</a></li>
+                    <li class="list"><a href="https://www.linkedin.com/e/v2?e=3te20m-kolu4ot9-o9&t=lun&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&ek=jobs_jymbii_digest&li=60&m=unsub&ts=unsub&eid=3te20m-kolu4ot9-o9&loid=AQEMFGMVG94Y0AAAAXlh-jeOmmW-RaZSjsnVCoaPY--9ZlkS2SxFw1bYgc3db6Q3Mb--deVadyA1xELuJLSsjretS3oIUFy_Dw">Se désinscrire</a></li>
+                    <li class="list"><a href="https://www.linkedin.com/e/v2?e=3te20m-kolu4ot9-o9&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D&a=customerServiceUrl&midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&ek=jobs_jymbii_digest&li=59&m=footer&ts=help&articleId=67">Aide</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="footstyle3">
+                <a href="https://www.linkedin.com/comm/feed/?midToken=AQFzwssRkEYECg&midSig=1jX1FUK57rcVM1&trk=eml-jobs_jymbii_digest-footer-57-home&trkEmail=eml-jobs_jymbii_digest-footer-57-home-null-3te20m%7Ekolu4ot9%7Eo9-null-neptune%2Ffeed&lipi=urn%3Ali%3Apage%3Aemail_jobs_jymbii_digest%3ByxiQ9q31TUi2KuCv5SsnpA%3D%3D">
+                    <img src="./images/image%20linkedin.png" alt="logo linkedin">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                © 2021 LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2. LinkedIn est le nom commercial déposé de LinkedIn Ireland Unlimited Company. LinkedIn et le logo de LinkedIn sont des marques déposées de LinkedIn.
+            </td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>

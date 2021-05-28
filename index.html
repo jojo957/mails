@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tableau html</title>
+    <style>
+        th, td {
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th> <!--cellule d'entête propre au thead-->
+                <th>Compétences</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <!--définit une ligne de cellule-->
+                <td>Johanna</td> <!--définit une cellule-->
+                <td>
+                    <ul>
+                        <li>zebi 1</li>
+                        <li>zebi 2</li>
+                        <li>zebi 3</li>
+                    </ul>
+                </td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Matthieu</td>
+                <td>
+                    <ul>
+                        <li>zebi 1</li>
+                        <li>zebi 2</li>
+                        <li>zebi 3</li>
+                    </ul>
+                </td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Thais</td>
+                <td>
+                    <ul>
+                        <li>zebi 1</li>
+                        <li>zebi 2</li>
+                        <li>zebi 3</li>
+                    </ul>
+                </td>
+                <td>10</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"> <!--colspan : fusionner les colonnes entre elles, rowspan: fusionner les lignes entre elles-->
+                    <p>Copyright zebi</p>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

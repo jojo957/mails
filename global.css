@@ -1,0 +1,10 @@
+body {
+    background-color: beige;
+}
+body table {
+    background-color: white;
+}
+
+tbody tr+tr+tr+tr+tr+tr+tr+tr td img {
+    border-radius: 50%;
+}
